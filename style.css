@@ -9,19 +9,23 @@ body{
 nav a{
     text-decoration: none;
     color: white;
+    padding: 2vw 3vw;
 }
 
 .logo{
 font-family: 'SF Pro Display';
 font-style: normal;
 font-weight: 700;
-font-size: 50px;
-line-height: 31px;
+font-size: 3vw;
+line-height: 5vw;
 /* identical to box height, or 62% */
 text-transform: uppercase;
 color: #FFFFFF;
 }
-
+.menuItems{
+    display: flex;
+    justify-content: center;
+}
 /*  header  */
 Header{
     width:  100vw;
