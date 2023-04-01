@@ -1,0 +1,242 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x:hidden ;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+}
+
+.logo{
+font-family: 'SF Pro Display';
+font-style: normal;
+font-weight: 700;
+font-size: 50px;
+line-height: 31px;
+/* identical to box height, or 62% */
+text-transform: uppercase;
+color: #FFFFFF;
+}
+
+/*  header  */
+Header{
+    width:  100vw;
+    height: 50vw;
+}
+/*  header image blend box */
+.blendBox{
+    position:absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.67);
+}
+.headerImage{
+    width: 100%;
+    
+}
+.HeaderText{
+    font-family: 'SF Pro Display';
+font-style: normal;
+font-weight: 700;
+font-size: 7vw;
+line-height: 7vw;
+/* or 105% */
+text-align: center;
+text-transform: uppercase;
+color: #FFFFFF;
+text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.47);
+}
+.header-text-container{
+ width: 100%;
+ height: 100%;
+ display:flex;
+ justify-content: center;
+ align-items: center;
+}
+/*  Header bottom gradiant box */
+.gradiantBox{
+   position: absolute;
+    top: 33vw;
+    width: 100%;
+    height: 20vw;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 5.31%, #000000 50.13%);
+    filter: drop-shadow(0px 0px 24px rgba(0, 0, 0, 0.35));
+}
+
+/* at UABarline  Section */
+.UABAirline{
+    width: 100%;
+    height: 60vw;  
+    position: relative;
+
+}
+.UABAirline .textTopCard {
+    width: 80vw;
+    position: absolute;
+    top: -6vw;
+    transform: translate(10vw, 20%);
+    z-index: 10;
+    gap: 1vw;
+
+    padding: 2vw;
+    background: #FFFFFF;
+   box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.25);
+   border-radius: 3vw;
+}
+.UABAirline .textTopCard p{
+    flex:50%;
+    font-family: 'SF Pro Display';
+font-style: normal;
+font-weight: 400;
+font-size: 1.5vw;
+line-height: 1.9vw;}
+
+.UABAirline .textTopCard h2{
+    flex:50%; 
+    font-size: 3vw;
+    line-height: 3.5vw;
+    font-weight: bold;
+}
+
+.uabAirlineTexContainer{
+ padding-top: 30vw;
+ text-align: center;
+}
+.uabAirlineTexContainer h3{
+    color: #FF3F0E;
+    font-size: 2vw;
+}
+.uabAirlineTexContainer h2{
+    font-weight: bold;
+    font-size: 3vw;
+}
+.uabAirlineTexContainer p{
+    margin-top: 1vw;
+    font-size: 2vw;
+    line-height: 2.5vw;
+    font-weight:600;
+}
+
+/*  Black Backgorund Section */
+.BlackBGContainer{
+    position: relative;
+    margin-top: 8vw;
+    width: 100%;
+    height: 60vw;
+}
+.ParagrapContainer{
+    flex-direction: column;
+    width: 28vw;
+    position: absolute;
+    top: 0vw;
+    left: 12vw;
+    font-size: 1.5vw;
+    line-height: 1.8vw;
+}
+
+.ParagrapContainer img{
+    width: 2vw;
+}
+.Blackbg{
+    position: absolute;
+    width: 50vw;
+    top: 0;
+    right: 5vw;
+    padding: 4vw;
+    color: white;
+    background: #000;
+    font-size: 1.5vw;
+    line-height: 2vw;
+}
+
+
+/*  We Provide Section  */
+.weProviedSection{
+    position: relative;
+    width: 100%;
+    height: 45vw;  
+}
+.weProvideImageContainer{
+     width: 40vw;
+     position: relative;
+     overflow: hidden;
+     height: 30vw;
+
+}
+.weProvideImageContainer img{
+    position: absolute;
+    width: 50vw;
+    top: 0;
+}
+
+.weProvideTextContainer{
+    position: absolute;
+    top: 30%;
+    width: 45vw;
+    right: 6vw;
+
+}
+.weProvideTextContainer p{
+    color: #FF3F0E;
+    font-size: 2vw;
+    font-weight: bold;
+}
+.weProvideTextContainer h2{
+    font-size: 3vw;
+    font-weight: bold;
+    line-height: 3.5vw;
+}
+
+/*  Our Servive container */
+.OurSecviceContainer{
+    position: relative;
+    width: 100%;
+    height: 40vw;
+}
+
+.OurSecviceTextContainer{
+    width: 35vw;
+    position: absolute;
+    top: 20%;
+    left: 10vw;
+}
+.OurSecviceTextContainer h2{
+    font-size: 2vw;
+    font-weight: bold;
+}
+.OurSecviceTextContainer p{
+    font-size: 1.8vw;
+    
+}
+
+.OurSecviceImageContainer{
+    width: 50vw;
+    height: 30vw;
+    position: absolute;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+}
+.OurSecviceImageContainer img{
+    width: 60vw;
+    position: absolute;
+    top:0;
+    left: 0;
+}
+
+/*  Service Cards */
+.ServiceCard{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.ServiceCard .Scard{
+    flex: 25%;   
+}
+.ServiceCard .Scard h2{}
+.ServiceCard .Scard p{}
