@@ -256,5 +256,9 @@ line-height: 1.9vw;}
     max-width: 25%;  
     padding: 2vw;
 }
-.ServiceCard .Scard h2{}
-.ServiceCard .Scard p{}
+.ServiceCard .Scard h2{
+    font-size: 1.5vw;
+}
+.ServiceCard .Scard p{
+    font-size: 1.5vw;
+}
