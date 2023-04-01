@@ -238,9 +238,12 @@ line-height: 1.9vw;}
     width: 100%;
     display: flex;
     justify-content: center;
+    gap: 2vw;
 }
 .ServiceCard .Scard{
-    flex: 25%;   
+    flex: 25%; 
+    max-width: 25%;  
+    padding: 2vw;
 }
 .ServiceCard .Scard h2{}
 .ServiceCard .Scard p{}
