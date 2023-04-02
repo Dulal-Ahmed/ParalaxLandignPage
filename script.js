@@ -14,6 +14,10 @@ window.onscroll = ()=>{
     let scrollEffect3 = document.querySelector('#scrollEffect3');
     let moveElements3 = document.querySelector('#moveElements3');
     let img1 = document.querySelector('#img1');
+
+    let scrollEffect4 = document.querySelector('#scrollEffect4');
+    let moveElements4 = document.querySelector('#moveElements4');
+    let img2 = document.querySelector('#img2');
     
     console.log(header.getBoundingClientRect().top )
     
@@ -46,5 +50,13 @@ if( (header.offsetHeight ) > scrollEffect3.getBoundingClientRect().top){
     let topValue =  scrollEffect3.getBoundingClientRect().top  - header.offsetHeight;
       moveElements3.style.top = (topValue / 4 ) + "px";
       img1.style.top = (topValue / 4 ) + "px";
+  }
+
+  
+  //   Scroll effect
+if( (header.offsetHeight ) > scrollEffect4.getBoundingClientRect().top){
+    let topValue =  scrollEffect4.getBoundingClientRect().top  - header.offsetHeight;
+      moveElements4.style.top = (topValue / 4 ) + "px";
+      img2.style.top = (topValue / 4 ) + "px";
   }
 }

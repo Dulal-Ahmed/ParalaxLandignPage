@@ -28,7 +28,6 @@ nav a{
 
 .logo{
 
-font-weight: 700;
 font-size: 3vw;
 /* identical to box height, or 62% */
 text-transform: uppercase;
@@ -64,7 +63,6 @@ Header{
 position: absolute;
 top:  15vw;
 left: 25vw;
-font-weight: 700;
 font-size: 7vw;
 line-height: 7vw;
 white-space: nowrap;
@@ -72,7 +70,7 @@ text-align: center;
 text-transform: uppercase;
 color: #FFFFFF;
 text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.47);
-transition: all 1s;
+transition: all 2s;
 transition-timing-function: ease-in-out;
 }
 
@@ -97,7 +95,7 @@ transition-timing-function: ease-in-out;
 .UABAirline .textTopCard {
     width: 80vw;
     position: absolute;
-    top: 50px;
+    top: 0;
     right: 10vw;
     z-index: 10;
     gap: 1vw;
@@ -111,7 +109,6 @@ transition-timing-function: ease-in-out;
     flex:50%;
     font-family: 'SF Pro Display';
 font-style: normal;
-font-weight: 400;
 font-size: 1.5vw;
 line-height: 1.9vw;}
 
@@ -119,7 +116,7 @@ line-height: 1.9vw;}
     flex:50%; 
     font-size: 3vw;
     line-height: 3.5vw;
-    font-weight: bold;
+ 
 }
 
 .uabAirlineTexContainer{
@@ -131,14 +128,13 @@ line-height: 1.9vw;}
     font-size: 2vw;
 }
 .uabAirlineTexContainer h2{
-    font-weight: bold;
+  
     font-size: 3vw;
 }
 .uabAirlineTexContainer p{
     margin-top: 1vw;
     font-size: 2vw;
     line-height: 2.5vw;
-    font-weight:600;
 }
 
 /*  Black Backgorund Section */
@@ -204,11 +200,9 @@ line-height: 1.9vw;}
 .weProvideTextContainer p{
     color: #FF3F0E;
     font-size: 2vw;
-    font-weight: bold;
 }
 .weProvideTextContainer h2{
     font-size: 3vw;
-    font-weight: bold;
     line-height: 3.5vw;
 }
 
@@ -220,14 +214,15 @@ line-height: 1.9vw;}
 }
 
 .OurSecviceTextContainer{
+    margin-top: 12vw;
     width: 35vw;
     position: absolute;
-    top: 20%;
+    top: 0;
     left: 10vw;
 }
 .OurSecviceTextContainer h2{
-    font-size: 2vw;
-    font-weight: bold;
+    font-size: 2.2vw;
+    
 }
 .OurSecviceTextContainer p{
     font-size: 1.8vw;
@@ -236,7 +231,7 @@ line-height: 1.9vw;}
 
 .OurSecviceImageContainer{
     width: 50vw;
-    height: 30vw;
+    height: 26vw;
     position: absolute;
     top: 0;
     right: 0;
@@ -305,7 +300,6 @@ line-height: 1.9vw;}
 .prideLeftBox p{
     text-transform: uppercase;
     font-size: 3vw;
-    font-weight: bolder;
 }
 
 .PridePrgrp{
@@ -358,7 +352,7 @@ line-height: 1.9vw;}
     color:#FF3F0E;
 }
 .contactDetails > div > div h2{
-    font-weight: bolder;
+
     font-size: 3vw;
     line-height: 1vw;
 }
@@ -400,7 +394,331 @@ footer{
     align-items: center;
     justify-content: center;
     font-size: 1.5vw;
-    color: white;
+    color: white;  
+}
 
-   
+
+/* ============================= */
+/* ============================= */
+
+
+/* Mobile View */
+@media(max-width:800px){
+
+   .logo{
+    font-size: 5vw;
+   }
+    .menuItems{
+        display: flex;
+        justify-content: center;
+        gap: 2vw;
+        font-size: 2.9vw;
+    }
+
+    .UABAirline .textTopCard {
+        width: 90vw;
+        position: absolute;
+        top: 0;
+        right: 5vw;
+        z-index: 10;
+        gap: 1vw;
+    
+        padding: 2vw;
+        background: #FFFFFF;
+       box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.25);
+       border-radius: 3vw;
+    }
+    .UABAirline .textTopCard p{
+        flex:50%;
+
+    font-size: 2.1vw;
+    line-height: 2.2vw;}
+    
+    .UABAirline .textTopCard h2{
+        flex:50%; 
+        font-size: 3vw;
+        line-height: 3.5vw;
+     
+    }
+    
+    .uabAirlineTexContainer{
+     padding-top: 30vw;
+     text-align: center;
+    }
+    .uabAirlineTexContainer h3{
+        color: #FF3F0E;
+        font-size: 2vw;
+    }
+    .uabAirlineTexContainer h2{
+      
+        font-size: 3vw;
+    }
+    .uabAirlineTexContainer p{
+        margin-top: 1vw;
+        font-size: 2vw;
+        line-height: 2.5vw;
+    }
+    
+    /*  Black Backgorund Section */
+    .BlackBGContainer{
+        position: relative;
+        margin-top: 8vw;
+        width: 100%;
+        height: 60vw;
+    }
+    .ParagrapContainer{
+        flex-direction: column;
+        width: 28vw;
+        position: absolute;
+        top: 0vw;
+        left: 12vw;
+        font-size: 1.5vw;
+        line-height: 1.8vw;
+    }
+    
+    .ParagrapContainer img{
+        width: 2vw;
+    }
+    .Blackbg{
+        position: absolute;
+        width: 50vw;
+        top: 0;
+        right: 5vw;
+        padding: 4vw;
+        color: white;
+        background: #000;
+        font-size: 1.5vw;
+        line-height: 2vw;
+    }
+    
+    
+    /*  We Provide Section  */
+    .weProviedSection{
+        position: relative;
+        width: 100%;
+        height: 45vw;  
+    }
+    .weProvideImageContainer{
+         width: 40vw;
+         position: relative;
+         overflow: hidden;
+         height: 25vw;
+    
+    }
+    .weProvideImageContainer img{
+        position: absolute;
+        width: 50vw;
+        top: 0;
+    }
+    
+    .weProvideTextContainer{
+        margin-top: 10vw;
+        position: absolute;
+        top: 0;
+        width: 45vw;
+        right: 6vw;
+    
+    }
+    .weProvideTextContainer p{
+        color: #FF3F0E;
+        font-size: 2vw;
+    }
+    .weProvideTextContainer h2{
+        font-size: 3vw;
+        line-height: 3.5vw;
+    }
+    
+    /*  Our Servive container */
+    .OurSecviceContainer{
+        position: relative;
+        width: 100%;
+        height: 40vw;
+    }
+    
+    .OurSecviceTextContainer{
+        margin-top: 12vw;
+        width: 35vw;
+        position: absolute;
+        top: 0;
+        left: 10vw;
+    }
+    .OurSecviceTextContainer h2{
+        font-size: 2.2vw;
+        
+    }
+    .OurSecviceTextContainer p{
+        font-size: 1.8vw;
+        
+    }
+    
+    .OurSecviceImageContainer{
+        width: 50vw;
+        height: 26vw;
+        position: absolute;
+        top: 0;
+        right: 0;
+        overflow: hidden;
+    }
+    .OurSecviceImageContainer img{
+        width: 60vw;
+        position: absolute;
+        top:0;
+        left: 0;
+    }
+    
+    /*  Service Cards */
+    .ServiceCard{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .ServiceCard .Scard{
+        flex: 25%; 
+        max-width: 25%;  
+        padding: 2vw;
+    }
+    .ServiceCard .Scard h2{
+        font-size: 2.3vw;
+    }
+    .ServiceCard .Scard p{
+        font-size: 1.5vw;
+        line-height: 1.9vw;
+    }
+    
+    /* WeCan Section   */
+    .weCan{
+        margin-top: 5vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center;
+    }
+    .weCan p{ 
+        width: 55vw;
+        text-align: center;
+        font-size: 1.8vw;
+        line-height: 2.2vw;
+    }
+    .weCan hr{
+     width: 80vw;
+    }
+    
+    /*  WE pride Section */
+    .wePrideContainer{
+        margin-top: 8vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2vw;
+    }
+    .prideLeftBox{
+        flex:40vw;
+        max-width: 40%;
+    }
+    .prideLeftBox h3{
+        color: #FF3F0E;
+        font-size: 2vw;
+        }
+    .prideLeftBox p{
+        text-transform: uppercase;
+        font-size: 3vw;
+    }
+    
+    .PridePrgrp{
+     font-size: 1.5vw;
+     width: 35vw;
+     max-width: 35%;
+    }
+    
+    /*  Footer Image Section  */
+    .FooterImage{
+        width: 100%;
+        position:relative;
+        height: 30vw;
+        overflow: hidden;
+        background-image: url(./image/image3.png);
+        background-position: center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+    }
+    
+    .mapContainer{
+        width: 100%;
+        height: 25vw;
+        position: relative;
+    }
+    .mapContainer img{
+        position: absolute;
+        top: -5vw;
+        right: 10vw;
+        width: 80vw;
+    }
+    
+    
+    /*  Contact Details Section */
+    .contactDetails{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+     
+    }
+    .contactDetails > div{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 2vw;
+        width: 30vw;
+    }
+    .contactDetails > div > div p{
+        font-size: 2vw;
+        color:#FF3F0E;
+    }
+    .contactDetails > div > div h2{
+    
+        font-size: 3vw;
+        line-height: 1vw;
+    }
+    
+    
+    /*  Footer Logo Container */
+    .footerLogoContainer{
+        background-color: #ECECEC ;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2vw 8vw;
+        margin-top: 5vw;
+    
+    }
+    .footerLogoContainer h2{
+        font-size: 3vw;
+    }
+    .footerLogoContainer div{
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        gap: 1.5vw;
+        
+    }
+    .footerLogoContainer div a{
+        font-size: 1.3vw;
+        text-decoration: none;
+        color: #000;
+    }
+    
+    /* footer  */
+    footer{
+        width: 100%;
+        padding: 1vw 1vw;
+        background:#FF3F0E;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5vw;
+        color: white;  
+    }
+    
+
+
 }
