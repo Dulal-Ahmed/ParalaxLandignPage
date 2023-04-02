@@ -184,7 +184,7 @@ line-height: 1.9vw;}
      width: 40vw;
      position: relative;
      overflow: hidden;
-     height: 30vw;
+     height: 25vw;
 
 }
 .weProvideImageContainer img{
@@ -194,8 +194,9 @@ line-height: 1.9vw;}
 }
 
 .weProvideTextContainer{
+    margin-top: 10vw;
     position: absolute;
-    top: 30%;
+    top: 0;
     width: 45vw;
     right: 6vw;
 
