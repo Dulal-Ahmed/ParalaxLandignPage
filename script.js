@@ -1,4 +1,6 @@
-
+   let Header1 = document.querySelector('#Header');
+   console.log( );
+   if(Header1.offsetWidth > 599){
 
 window.onscroll = ()=>{
     //  select all class 
@@ -60,3 +62,4 @@ if( (header.offsetHeight ) > scrollEffect4.getBoundingClientRect().top){
       img2.style.top = (topValue / 4 ) + "px";
   }
 }
+   }

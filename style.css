@@ -403,23 +403,89 @@ footer{
 
 
 /* Mobile View */
-@media(max-width:800px){
+@media(max-width:600px){
+    nav{
+        padding: .1vw 4vw;
+        position: absolute;
+        width: 100%;
+        top: 0;
+        z-index: 99;
+        align-items: center;
+    }
 
-   .logo{
-    font-size: 5vw;
-   }
+    
+    .logo{
+    
+    font-size: 3vw;
+    /* identical to box height, or 62% */
+    text-transform: uppercase;
+    color: #FFFFFF;
+    }
     .menuItems{
         display: flex;
         justify-content: center;
         gap: 2vw;
-        font-size: 2.9vw;
+        font-size: 1.5vw;
     }
-
-    .UABAirline .textTopCard {
-        width: 90vw;
-        position: absolute;
+    /*  header  */
+    Header{
+        width:  100vw;
+        height: 50vw;
+        overflow: hidden;
+    }
+    /*  header image blend box */
+    .blendBox{
+        position:absolute;
         top: 0;
-        right: 5vw;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.67);
+    }
+    .headerVideo{
+        width: 100%;  
+    }
+    .headerVideo video{
+        width: 100%;
+    }
+    #HeaderText{
+    position: absolute;
+    top:  15vw;
+    left: 25vw;
+    font-size: 7vw;
+    line-height: 7vw;
+    white-space: nowrap;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.47);
+    transition: all 2s;
+    transition-timing-function: ease-in-out;
+    }
+    
+    /*  Header bottom gradiant box */
+    .gradiantBox{
+       position: absolute;
+        top: 40vw;
+        width: 100%;
+        height: 20vw;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 5.31%, #000000 50.13%);
+        filter: drop-shadow(0px 0px 24px rgba(0, 0, 0, 0.35));
+    }
+    
+    /* at UABarline  Section */
+    .UABAirline{
+        width: 100%;
+        height: 60vw;  
+        position: relative;
+        margin-top: 8vw;
+    
+    }
+    .UABAirline .textTopCard {
+        flex-direction: column;
+        width: 80vw;
+        position: absolute;
+        top: -10vw;
+        right: 10vw;
         z-index: 10;
         gap: 1vw;
     
@@ -430,14 +496,19 @@ footer{
     }
     .UABAirline .textTopCard p{
         flex:50%;
-
-    font-size: 2.1vw;
-    line-height: 2.2vw;}
+        font-family: 'SF Pro Display';
+    font-style: normal;
+    font-size: 2.5vw;
+    line-height: 2.9vw;
+    text-align: center;
+}
     
     .UABAirline .textTopCard h2{
         flex:50%; 
-        font-size: 3vw;
-        line-height: 3.5vw;
+        font-size: 3.6vw;
+        line-height: 4.vw;
+        text-align: center;
+        
      
     }
     
@@ -462,18 +533,19 @@ footer{
     /*  Black Backgorund Section */
     .BlackBGContainer{
         position: relative;
-        margin-top: 8vw;
+        margin-top: 0vw;
         width: 100%;
         height: 60vw;
     }
     .ParagrapContainer{
         flex-direction: column;
-        width: 28vw;
+        width: 80vw;
         position: absolute;
         top: 0vw;
-        left: 12vw;
-        font-size: 1.5vw;
-        line-height: 1.8vw;
+        left: 10vw;
+        font-size: 3.5vw;
+        line-height: 3.8vw;
+        text-align: center;
     }
     
     .ParagrapContainer img{
@@ -481,86 +553,92 @@ footer{
     }
     .Blackbg{
         position: absolute;
-        width: 50vw;
-        top: 0;
-        right: 5vw;
+        width: 80vw;
+        top: 35vw;
+        right: 10vw;
         padding: 4vw;
         color: white;
         background: #000;
-        font-size: 1.5vw;
-        line-height: 2vw;
+        font-size: 2.5vw;
+        line-height: 4vw;
     }
     
     
     /*  We Provide Section  */
     .weProviedSection{
+        margin-top: 60vw;
         position: relative;
         width: 100%;
         height: 45vw;  
     }
     .weProvideImageContainer{
-         width: 40vw;
-         position: relative;
+         width: 80vw;
+         position: absolute;
+         top: 0;
+         left: 10vw;
          overflow: hidden;
-         height: 25vw;
+         height: 40vw;
     
     }
     .weProvideImageContainer img{
-        position: absolute;
-        width: 50vw;
+        position: relative;
+        width: 100%;
         top: 0;
     }
     
     .weProvideTextContainer{
-        margin-top: 10vw;
+        margin-top: 45vw;
         position: absolute;
         top: 0;
-        width: 45vw;
-        right: 6vw;
+        width: 80vw;
+        right: 10vw;
+        text-align: center;
     
     }
     .weProvideTextContainer p{
         color: #FF3F0E;
-        font-size: 2vw;
+        font-size: 3vw;
     }
     .weProvideTextContainer h2{
-        font-size: 3vw;
-        line-height: 3.5vw;
+        font-size: 4vw;
+        line-height: 4.5vw;
     }
     
     /*  Our Servive container */
     .OurSecviceContainer{
+        margin-top: 30vw;
         position: relative;
         width: 100%;
         height: 40vw;
     }
     
     .OurSecviceTextContainer{
-        margin-top: 12vw;
-        width: 35vw;
+        margin-top: 35vw;
+        width: 80vw;
         position: absolute;
         top: 0;
         left: 10vw;
+        text-align: center;
     }
     .OurSecviceTextContainer h2{
-        font-size: 2.2vw;
+        font-size: 3.2vw;
         
     }
     .OurSecviceTextContainer p{
-        font-size: 1.8vw;
+        font-size: 2.8vw;
         
     }
     
     .OurSecviceImageContainer{
-        width: 50vw;
-        height: 26vw;
+        width: 80vw;
+        height: 30vw;
         position: absolute;
-        top: 0;
-        right: 0;
+        top: 0vw;
+        right: 10vw;
         overflow: hidden;
     }
     .OurSecviceImageContainer img{
-        width: 60vw;
+        width: 80vw;
         position: absolute;
         top:0;
         left: 0;
@@ -571,33 +649,34 @@ footer{
         width: 100%;
         display: flex;
         justify-content: center;
+        margin-top: 30vw;
     }
     .ServiceCard .Scard{
-        flex: 25%; 
-        max-width: 25%;  
-        padding: 2vw;
+        flex: 30%; 
+        max-width: 30%;  
+        padding: 1vw;
     }
     .ServiceCard .Scard h2{
-        font-size: 2.3vw;
+        font-size: 3.3vw;
     }
     .ServiceCard .Scard p{
-        font-size: 1.5vw;
-        line-height: 1.9vw;
+        font-size: 2.5vw;
+        line-height: 2.9vw;
     }
     
     /* WeCan Section   */
     .weCan{
-        margin-top: 5vw;
+        margin-top: 0vw;
         display: flex;
         flex-direction: column;
         justify-content: center; 
         align-items: center;
     }
     .weCan p{ 
-        width: 55vw;
+        width: 80vw;
         text-align: center;
-        font-size: 1.8vw;
-        line-height: 2.2vw;
+        font-size: 2.8vw;
+        line-height: 3.2vw;
     }
     .weCan hr{
      width: 80vw;
@@ -605,15 +684,18 @@ footer{
     
     /*  WE pride Section */
     .wePrideContainer{
-        margin-top: 8vw;
+        width: 100%;
+        margin-top: 5vw;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 2vw;
+        gap: 0vw;
     }
     .prideLeftBox{
-        flex:40vw;
-        max-width: 40%;
+        max-width: 60%;
+        text-align: center;
+       
     }
     .prideLeftBox h3{
         color: #FF3F0E;
@@ -625,9 +707,11 @@ footer{
     }
     
     .PridePrgrp{
-     font-size: 1.5vw;
-     width: 35vw;
-     max-width: 35%;
+     margin-top: -20vw;
+     font-size: 2.5vw;
+     width: 60vw;
+     max-width: 60%;
+     text-align: center;
     }
     
     /*  Footer Image Section  */
@@ -719,6 +803,5 @@ footer{
         color: white;  
     }
     
-
 
 }
