@@ -1,8 +1,15 @@
+@font-face {
+    font-family: SfProDisplay;
+    src: url(./fonts/SFPRODISPLAYBOLD.OTF);
+  }
+
 *{
+    font-family: SfProDisplay;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 body{
     overflow-x:hidden ;
 }
@@ -16,13 +23,11 @@ nav{
 }
 nav a{
     text-decoration: none;
-    color: white;
-    
+    color: white;  
 }
 
 .logo{
-font-family: 'SF Pro Display';
-font-style: normal;
+
 font-weight: 700;
 font-size: 3vw;
 /* identical to box height, or 62% */
@@ -55,8 +60,7 @@ Header{
     width: 100%;
 }
 .HeaderText{
-    font-family: 'SF Pro Display';
-font-style: normal;
+
 font-weight: 700;
 font-size: 7vw;
 line-height: 7vw;
@@ -274,6 +278,8 @@ line-height: 1.9vw;}
 .weCan p{ 
     width: 55vw;
     text-align: center;
+    font-size: 1.8vw;
+    line-height: 2.2vw;
 }
 .weCan hr{
  width: 80vw;
@@ -305,4 +311,53 @@ line-height: 1.9vw;}
  font-size: 1.5vw;
  width: 35vw;
  max-width: 35%;
+}
+
+/*  Footer Image Section  */
+.FooterImage{
+    width: 100%;
+    position:relative;
+    height: 30vw;
+    overflow: hidden;
+    background-image: url(./image/image3.png);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.mapContainer{
+    width: 100%;
+    height: 25vw;
+    position: relative;
+}
+.mapContainer img{
+    position: absolute;
+    top: -5vw;
+    right: 10vw;
+    width: 80vw;
+}
+
+
+/*  Contact Details Section */
+.contactDetails{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+ 
+}
+.contactDetails > div{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2vw;
+    width: 30vw;
+}
+.contactDetails > div > div p{
+    font-size: 2vw;
+    color:#FF3F0E;
+}
+.contactDetails > div > div h2{
+    font-weight: bolder;
+    font-size: 3vw;
+    line-height: 1vw;
 }
