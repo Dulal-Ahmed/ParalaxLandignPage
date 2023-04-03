@@ -1,5 +1,24 @@
+  //   mobile menu
+  let MobileIcon = document.querySelector('.MobileIcon');
+  let menuItems = document.querySelector('.menuItems');
+  let MobuleMenuOpen = false;
+   MobileIcon.addEventListener('click',()=>{
+    if(MobuleMenuOpen){ MobuleMenuOpen = false; }else{MobuleMenuOpen = true;}
+    if(MobuleMenuOpen){
+      menuItems.style.width = "100vw"; 
+      menuItems.style.opacity = 1;
+      MobileIcon.style.transform = "rotate(45deg)" 
+    }else{
+      MobileIcon.style.transform = "rotate(180deg)"  
+      menuItems.style.opacity = 0; 
+      menuItems.style.width = "0px"; 
+    }
+   })
+   
+   
    let Header1 = document.querySelector('#Header');
    console.log( );
+
    if(Header1.offsetWidth > 599){
 
 window.onscroll = ()=>{
