@@ -87,7 +87,7 @@ transition-timing-function: ease-in-out;
 /* at UABarline  Section */
 .UABAirline{
     width: 100%;
-    height: 60vw;  
+    height: 30vw;  
     position: relative;
     margin-top: 8vw;
 
@@ -120,7 +120,7 @@ line-height: 1.9vw;}
 }
 
 .uabAirlineTexContainer{
- padding-top: 30vw;
+ padding-top: 8vw;
  text-align: center;
 }
 .uabAirlineTexContainer h3{
@@ -142,7 +142,7 @@ line-height: 1.9vw;}
     position: relative;
     margin-top: 8vw;
     width: 100%;
-    height: 60vw;
+    height: 35vw;
 }
 .ParagrapContainer{
     flex-direction: column;
@@ -174,7 +174,7 @@ line-height: 1.9vw;}
 .weProviedSection{
     position: relative;
     width: 100%;
-    height: 45vw;  
+    height: 38vw;  
 }
 .weProvideImageContainer{
      width: 40vw;
@@ -210,7 +210,7 @@ line-height: 1.9vw;}
 .OurSecviceContainer{
     position: relative;
     width: 100%;
-    height: 40vw;
+    height: 30vw;
 }
 
 .OurSecviceTextContainer{
